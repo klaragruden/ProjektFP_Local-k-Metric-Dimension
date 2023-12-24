@@ -1,0 +1,78 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+
+\newtheorem{definition}{Definicija}
+
+\pagestyle{plain}
+
+\begin{document}
+\author{Tian Lipovšek in Klara Gruden}
+\date{December 2023}
+\title{Lokalna k-matrična dimenzija grafov - kratek opis}
+\maketitle
+
+
+\section{Opis}
+Following the paper [10], implement an ILP model for this invariant, and then write separate
+small programs in Sage to answer each of following questions by exhaustive search.
+\begin{enumerate}
+    \item Determine $ldim_k(G)$ for paths, cycles, complete graphs, bipartite complete graphs, hypercubes and some 
+    other interesting classes of graphs and try to guess the possible formulas based on the computations.
+    \item Try to determine graphs G which satisfy $ldimk(G) = dimk(G)$ for a given $k$ for $k=1,2,3,...$.
+    For small graphs, apply a systematic search; for larger ones, apply some stochastic search.
+\end{enumerate}
+
+\section{Definicije}
+
+    \begin{definition}
+        Vozlišče $s$ reši par vozlišč $x$, $y$ v grafu $G$, če $d(s,x) \neq d(s,y)$.
+    \end{definition}
+
+    \begin{definition}
+        Rešujoča množica grafa $G$ je množica $S$, za katero velja, da za vsaki dve 
+        vozlišči $x$ in $y$ v $V(G)$ obstaja vozlišče $s \in S$, ki reši par vozlišč $x$,$y$.
+    \end{definition}
+
+    \begin{definition}
+        Metrična dimenzija povezanega grafa $G$, označena z $dim(G)$, je definirana kot velikost najmanjše 
+        množice $S \subseteq V(G)$, ki razlikuje vse pare vozlišč v $G$.
+    \end{definition}     
+
+    \begin{definition}
+        Lokalna rešujoča množica grafa $G$ je množica $S$, za katero velja, da za vsaki sosednji 
+        vozlišči $x$ in $y$ v $V(G)$ obstaja vozlišče $s \in S$, ki reši par vozlišč $x$,$y$.
+    \end{definition}
+
+    \begin{definition}
+        K-metrična dimenzija, označimo jo s $dim_k(G)$ je metrična dimenzija, 
+        pri kateri hočemo, da za vsak par vozlišč obstaja vsaj k vozlišč $s \in S$, ki rešijo par vozlišč $x$,$y$.
+    \end{definition}   
+    
+    \begin{definition}
+        Lokalna metrična dimenzija, označena z $ldim(G)$, predstavlja moč najmanjše 
+        lokalno rešujoče množice grafa $G$.
+    \end{definition} 
+
+\section{Problem} 
+V lokalni k-metrični dimenziji želimo najti najmanjšo množico vozlišč, ki omogoča razlikovanje sosednjih 
+vozlišč v grafu. To se naredi tako, da za vsak par sosednjih vozlišč x, y obstaja vozlišče s v množici, 
+pri čemer velja $d(s, x) \neq d(s, y)$. Cilj je določiti ldimk(G) za različne razrede grafov in preučiti, 
+ali obstajajo grafi, kjer lokalna k-metrična dimenzija sovpada z običajno k- metrično dimenzijo.    
+
+
+\section{Načrt dela}
+    \begin{itemize}
+        \item Napisala bova celoštevilski linearni program, s katerim bova s pomočjo simulacij, 
+        za različne vrste grafov poskušala uganiti formule za lokalno k-metrično dimenzijo
+        \item Poskušala bova ugotoviti, ali obstajajo grafi G, kjer lokalna k-metrična dimenzija sovpada z 
+        običajno k-metrično dimenzijo za dano vrednost k.
+    \end{itemize}
+
+\end{document}
