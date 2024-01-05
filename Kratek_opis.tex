@@ -75,4 +75,30 @@ ali obstajajo grafi, kjer lokalna k-metrična dimenzija sovpada z običajno k- m
         običajno k-metrično dimenzijo za dano vrednost k.
     \end{itemize}
 
+    K prvemu delu naloge bova pristopila tako, da bova v Sage prepisala naslednji CLP:
+    Naj bo $V(G)=\left\{v_{1}, \ldots, v_{n}\right\}$ množica vozlišč grafa $G$. 
+    Naj bo $S \subseteq V(G)$. 
+    Definiramo celoštevilske spremenljivke $x_{i}$ za vsako vozlišče grafa po sledečem predpisu 
+    
+    $$
+    x_{i}= \begin{cases}1 & \text { if } v_{i} \in S \\ 0 & \text { if } v_{i} \notin S\end{cases}
+    $$
+    
+    ter spremenljivko $y_{ij}$ kot
+
+    $$
+    y_{ij}= \begin{cases}1 & \text { if } v_{i} \neq v_{j}  \\ 0 & \text { if } v_{i} = v_{j}\end{cases}
+    $$
+
+    CLP za iskanje lokalne k-metrične dimenzije bo torej izgledal tako:
+
+    $$
+    \begin{array}{ll} 
+    & \min \sum_{i=1}^{n} x_{i} \\
+    \text { s.t. } & \sum_{i,j} y_{ij} \geq 1; \text {za vsa sosednja vozlišča i,j}\\
+    & \sum_{j} y_{ij} \geq k \cdot x_{i}; \text {za vsa vozlišča i}\\
+    & x_{i} \in\{0,1\} \text { za vse } 1 \leq i \leq n \\
+    & y_{j} \in\{0,1\} \text { za vse } 1 \leq j \leq n
+    \end{array}
+$$
 \end{document}
