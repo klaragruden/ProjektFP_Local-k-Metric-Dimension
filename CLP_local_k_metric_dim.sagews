@@ -1,8 +1,5 @@
-︠8f9c2661-54f6-4cab-bd76-f368ab01bf38s︠
-
 from sage.graphs.graph_plot import GraphPlot
 from sage.numerical.mip import MixedIntegerLinearProgram
-
 ###################################################################################
 
 #CLP, ki vrne lokalno k-to dimenzijo grafa
@@ -67,8 +64,6 @@ def CLP_k_dim(g, k_value):
     return optimalna_resitev#, vrednosti_za_S
    
 
-######################################################################
-︡20bf43c1-f15f-4887-8e3c-a97d9776e659︡{"done":true}
 
 
 
