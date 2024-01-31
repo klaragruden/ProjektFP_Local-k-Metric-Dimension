@@ -1,8 +1,3 @@
-︠42e2bbb6-fe4e-42a2-99a5-3a8ebb8639e8s︠
-︡480b2ee1-3db1-4f81-b144-302a7628b7d5︡
-︠b84c168b-2aab-4f1d-b04f-a05bfb814955s︠
-︡91472d84-c8a1-4871-909c-9d378f3c71c5︡
-︠6f11d4c5-b536-44bb-a786-6e0e1b91f451s︠
 from sage.graphs.graph import Graph
 from sage.numerical.mip import MixedIntegerLinearProgram, MIPSolverException
 from sage.graphs.graph_plot import GraphPlot
@@ -109,20 +104,7 @@ def testiranje_naloga2_1(m, n, max_k):
                 show(graph)
 
 
-                
-
-
-︡773d0a4a-4844-4fe4-81b4-8da2f5f3cfc5︡{"done":true}
-︠83150379-e0e9-4e06-a53f-cf0835a51599︠
-           
-                
-︡e9de9b98-4dfb-4c5e-893c-833f48809f6f︡
-︠5017f7bb-4728-4304-9ba0-1365fb8b2c00s︠
-testiranje_naloga2_1(2,7,2)                             
-︡1117f516-14d4-49f7-9375-53128383268b︡{"stdout":"{1: False, 2: (2, {1: 1.0, 0: 1.0})}\n"}︡{"d3":{"data":{"charge":-120,"directed":false,"edge_labels":false,"edge_thickness":2,"gravity":0.04,"height":null,"link_distance":50,"link_strength":1,"links":[{"color":"#aaa","curve":0,"name":"","source":0,"strength":0,"target":1}],"loops":[],"nodes":[{"group":"0","name":"0"},{"group":"0","name":"1"}],"pos":[],"vertex_labels":true,"vertex_size":7,"width":null},"viewer":"graph"}}︡{"stdout":"{1: False, 2: (4, {3: 0.0, 4: 1.0, 0: 1.0, 5: 1.0, 6: 1.0, 1: 0.0, 2: 0.0})}"}︡{"stdout":"\n"}︡{"d3":{"data":{"charge":-120,"directed":false,"edge_labels":false,"edge_thickness":2,"gravity":0.04,"height":null,"link_distance":50,"link_strength":1,"links":[{"color":"#aaa","curve":0,"name":"","source":0,"strength":0,"target":3},{"color":"#aaa","curve":0,"name":"","source":0,"strength":0,"target":4},{"color":"#aaa","curve":0,"name":"","source":1,"strength":0,"target":4},{"color":"#aaa","curve":0,"name":"","source":1,"strength":0,"target":5},{"color":"#aaa","curve":0,"name":"","source":1,"strength":0,"target":6},{"color":"#aaa","curve":0,"name":"","source":2,"strength":0,"target":5},{"color":"#aaa","curve":0,"name":"","source":2,"strength":0,"target":6},{"color":"#aaa","curve":0,"name":"","source":3,"strength":0,"target":5},{"color":"#aaa","curve":0,"name":"","source":3,"strength":0,"target":6},{"color":"#aaa","curve":0,"name":"","source":5,"strength":0,"target":6}],"loops":[],"nodes":[{"group":"0","name":"0"},{"group":"0","name":"1"},{"group":"0","name":"2"},{"group":"0","name":"3"},{"group":"0","name":"4"},{"group":"0","name":"5"},{"group":"0","name":"6"}],"pos":[],"vertex_labels":true,"vertex_size":7,"width":null},"viewer":"graph"}}︡{"stdout":"{1: False, 2: (4, {2: 1.0, 4: 0.0, 6: 0.0, 0: 1.0, 3: 1.0, 5: 1.0, 1: 0.0})}"}︡{"stdout":"\n"}︡{"d3":{"data":{"charge":-120,"directed":false,"edge_labels":false,"edge_thickness":2,"gravity":0.04,"height":null,"link_distance":50,"link_strength":1,"links":[{"color":"#aaa","curve":0,"name":"","source":0,"strength":0,"target":2},{"color":"#aaa","curve":0,"name":"","source":0,"strength":0,"target":4},{"color":"#aaa","curve":0,"name":"","source":0,"strength":0,"target":6},{"color":"#aaa","curve":0,"name":"","source":1,"strength":0,"target":3},{"color":"#aaa","curve":0,"name":"","source":1,"strength":0,"target":5},{"color":"#aaa","curve":0,"name":"","source":1,"strength":0,"target":6},{"color":"#aaa","curve":0,"name":"","source":2,"strength":0,"target":4},{"color":"#aaa","curve":0,"name":"","source":2,"strength":0,"target":6},{"color":"#aaa","curve":0,"name":"","source":3,"strength":0,"target":5}],"loops":[],"nodes":[{"group":"0","name":"0"},{"group":"0","name":"1"},{"group":"0","name":"2"},{"group":"0","name":"3"},{"group":"0","name":"4"},{"group":"0","name":"5"},{"group":"0","name":"6"}],"pos":[],"vertex_labels":true,"vertex_size":7,"width":null},"viewer":"graph"}}︡{"done":true}
-︠acb3b668-d990-4d41-b920-3d24517f01f7︠
-                
-               
+                     
 
 
 
